@@ -1,0 +1,132 @@
+.app__features{
+
+     overflow: hidden;
+    // @media screen and (max-width: '769px') {
+    //     width: 80%;
+    //     margin: auto;
+    // }
+}
+
+.app__features-header{
+    position: relative;
+    h3, p {
+        text-align: center;
+        font-family: var(--font-base);
+    }
+    
+    h3 {
+        font-size: 2.5rem;
+        font-weight: 500;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+        color: #999;
+        line-height: 1.7rem;
+    }
+
+    margin: 2rem 0 5rem;
+}
+
+.app__features-items {
+    width: 90%;
+    margin: 1rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: '1240px') {
+        width: 94%;
+    }
+
+    @media screen and (max-width: '769px') {
+        width: 80%;
+    }
+}
+
+.app__feature {
+    width: 350px;
+    height: 250px;
+    background-color: #f2efee;
+    padding: 1rem;
+    position: relative;
+    margin-bottom: 2.3rem;
+    transition: all .5s ease;
+    border-radius: .5rem;
+
+    h3, p, a {
+        text-align: center;
+        margin: 1rem 0;
+        font-family: var(--font-base);
+    }
+
+    h3 {
+        margin-top: 2.7rem;
+    }
+
+    a {
+        display: block;
+        text-decoration: none;
+        color: var(--blueLight-color);
+        text-transform: capitalize;
+    }
+
+
+    .app__feature-icon {
+        position: relative;
+        background-color: #33a6e9;
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        svg {
+            color: var(--white-color);
+            font-size: 2.5rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    &:hover {
+        transform: translateY(-0.5rem);
+        .app__feature-icon {
+            background-color: var(--white-color);
+            box-shadow: 0 0 10px rgba(2, 2, 2, .3 );
+
+            svg {
+                color: #33a6e9;
+            }
+        }
+        background-color: #33a6e9;
+        h3, p, a {
+            color: var(--white-color);
+        }
+    }
+
+    @media screen and (max-width: '1240px') {
+        width: 290px;
+    }
+
+    @media screen and (max-width: '991px') {
+        width: 350px;
+    }
+
+    // @media screen and (max-width: '800px') {
+    //     width: 330px;
+    // }
+
+    @media screen and (max-width: '769px') {
+        width: 90%;
+    }
+
+}
+

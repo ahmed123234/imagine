@@ -1,0 +1,32 @@
+.app__footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3rem 0;
+    span {
+        font-family: var(--font-base);
+        text-align: center;
+        line-height: 1.8rem;
+        color: #777;
+        font-size: 1.1rem;
+        font-weight: 400;
+    }
+    div {
+        a {
+            text-decoration: none;
+            margin: 1rem;
+            color: var(--blue-color);
+
+            &:hover {
+                color: var(--blueLight-color);
+            }
+
+            svg {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+}

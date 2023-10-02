@@ -1,0 +1,126 @@
+.app__cont {
+    width: 90%;
+    // display: flex;
+    margin: 8rem auto;
+    // justify-content: center;
+
+    .header__text {
+        margin-bottom: 3rem;
+    }
+    .app__blogs {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        align-items: center;
+        width: 90%;
+        margin: auto;
+
+        @media screen and (max-width: '1240px') {
+            width: 100%;
+        }
+
+        @media screen and (max-width: '991px') {
+            grid-template-columns: auto auto;
+        }
+
+        @media screen and (max-width: '769px') {
+            grid-template-columns: auto;
+        }
+
+
+    }
+
+}
+
+
+.app__blog {
+    padding: 1rem;
+    position: relative;
+    margin-bottom: 2.3rem;
+    transition: all .5s ease;
+    border-radius: .5rem;
+
+    .app__blog-img {
+        position: relative;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+
+      .dot {
+        display: inline-block;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background-color: #888;
+      }
+
+      @media screen and (max-width: '1240px') {
+        gap: .5rem;
+      }
+      
+    }
+
+    .app__blog-info {
+        margin-top: 1.1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 1rem;
+
+        h2, p, a {
+            font-family: var(--font-base);
+        }
+        h2 {
+            font-weight: 400;
+            font-size: 1.8rem;
+        }
+
+        a {
+            color: #33a6e9;
+            text-decoration: none;
+        }
+
+        @media screen and (max-width: '780px') {
+            width: 100%;
+        }
+
+        @media screen and (max-width: '1240px') {
+            width: 100%;
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media screen and (max-width: '991px') {
+            
+        }
+
+        @media screen and (max-width: '769px') {
+            grid-template-columns: auto;
+        }
+        
+    }
+
+    &:hover {
+       
+        .app__blog-img {
+           
+            img {
+                transform: scale(20px, 20px);
+                // width: 100%;
+                // height: 100%;
+                // width: 101%;
+                // transform: scale(1.5rem, 1.5rem);
+                
+            }
+        }
+    }
+}
